@@ -1,0 +1,8 @@
+{
+    "APP_POS" : "Konum",
+    "APP_LAP" : "Tur",
+    "APP_CHECKPOINT" : "Kontrol Noktası",
+    "APP_TIME" : "Zaman",
+    "APP_LAPTIME" : "Tur Zamanı",
+    "APP_BESTLAPTIME" : "En iyi Tur Zamanı"
+}

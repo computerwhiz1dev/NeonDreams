@@ -1,0 +1,483 @@
+{
+  "WebSiteURL" : "https://gkshop.org/",
+  "locales": "en",
+  "Picturequality": 0.85,
+  "ImageSizeLimitMB": 10,
+  "PictureType": "jpg",
+  "NotifiKonumDebug" : false,
+  "Valebring": true,
+  "Facetime": true,
+  "GroupCall": true,
+  "MessageRecordMic": true,
+  "BottomNotif" : true,
+  "RealTime" : true,
+  "AirDrop": true,
+  "RingtoneXsound": true,
+  "JobMessageAnonymous": true,
+  "CurrencyComma" : true,
+  "GamblingGame" : true,
+  "qbitPurchase": true,
+  "qbitSell": true,
+  "qbitTransfer": true,
+  "RaceNOSPhasing": true,
+  "Race30sPhasing": true,
+  "RaceFullPhasing": true,
+  "HomePageSkip": false,
+  "LiveAPPGIF": 5000,
+  "NewBill": true,
+  "NewsPerm" : {
+    "police" : true,
+    "newspaper" : true
+  },
+
+  "Squawk": {
+    "image": true,
+    "video": true,
+    "audio": true,
+    "poll": true,
+    "emoji": true,
+    "CharacterLimit": 500,
+    "verify": true
+  },
+
+  "YellowFilter": {
+    "mechanic" : "Mechanic",
+    "bartender" : "Bartender",
+    "lawyer" : "Lawyer"
+  },
+
+  "JobApplication": {
+    "police": "Police",
+    "ambulance": "Ambulance"
+  },
+
+  "JobApplicationQuestions": {
+    "1": "Why are you applying for this job?",
+    "2": "Tell about yourself"
+  },
+
+  "JobCategory": {
+    "police" : "Deparments",
+    "ambulance" : "Ambulance",
+    "mechanic" : "Mechanic",
+    "lawyer" : "Lawyer"
+  },
+
+  "JobMessages": [
+    {"label" : "PD", "jobname" : ["police", "sheriff", "#####"], "logoname": "police", "category": "police"},
+    {"label" : "EMS", "jobname" : ["ambulance"], "logoname": "ambulance", "category": "ambulance"},
+    {"label" : "GKSHOP Mechanic", "jobname" : ["mechanic"], "logoname": "mechanic", "category": "mechanic"},
+    {"label" : "GKSHOP Mechanic2", "jobname" : ["mechanic2"], "logoname": "mechanic", "category": "mechanic"},
+    {"label" : "GKSHOP Lawyer", "jobname" : ["lawyer"], "logoname": "mechanic", "category": "lawyer"}
+  ],
+
+
+  "NotifiKonum": {
+    "Messages": {"top": "30px", "left": "30px"},
+    "Jobs": {"top": "80px", "left": "30px"}
+  },
+
+
+  "background": {
+    "walpaper1": "4k_wallpaper.jpg",
+    "walpaper2": "back002.jpg",
+    "walpaper3": "car.jpg",
+    "walpaper4": "fortnite_4k.jpg",
+    "walpaper5": "gta5.jpg",
+    "walpaper6": "iluminacion.jpg",
+    "walpaper7": "nature_4k_fullhd.jpg",
+    "walpaper8": "newphone.png",
+    "walpaper9": "oscuridad.jpg",
+    "walpaper10": "paisajes.jpg",
+    "walpaper11": "playa.jpg",
+    "walpaper12": "rainy_night.jpg",
+    "walpaper13": "tokio.jpg",
+    "walpaper14": "sahesiz.png"
+  },
+
+  "background_default": {
+    "label": "walpaper8",
+    "value": "newphone.png"
+  },
+
+
+
+
+  "sonido": {
+    "Astronomia": "ring.ogg",
+    "Bella Ciao": "bella_ciao.ogg",
+    "Iphone 11": "iphone_11.ogg",
+    "XXXTentacion": "xtentacion.ogg",
+    "enemysquid": "enemysquid.ogg",
+    "NoiDoi": "NoiDoi.ogg"
+  },
+
+  "sonido_default": {
+    "label": "Astronomia",
+    "value": "ring.ogg"
+  },
+
+  "coque_default": {
+    "label": "Iphonex",
+    "value": "iphonex.png"
+  },
+
+  "SignalBottomAPP": {
+    "call": true,
+    "settings": true,
+    "appstore": true,
+    "contacts": true
+  },
+
+  "StarterApp" : [
+    {"name": "Info",  "categori": "social",  "icons": "/html/static/img/icons/edge.png", "routeName": "IframeWeb", "signal": true, "show":true},
+    {"name": "Messages",  "categori": "social", "icons": "/html/static/img/icons/messages.png", "routeName": "messages", "puceRef": "nbMessagesUnread", "signal": true, "show":true},
+    {"name": "Camera",    "categori": "jobs", "icons": "/html/static/img/icons/camera.png", "routeName": "photo", "signal": true, "show":true},
+    {"name": "Jobs",      "categori": "jobs", "icons": "/html/static/img/icons/jobm.png", "routeName": "jobm", "puceRef": "nbJobMessRead", "signal": true, "show":true},
+    {"name": "Mail",      "categori": "social", "icons": "/html/static/img/icons/mail.png", "routeName": "mail", "signal": true, "show":true},
+    {"name": "Bank",     "categori": "finance", "icons": "/html/static/img/icons/wallet.png", "routeName": "bankb", "signal": true, "show":true},
+    {"name": "Billing",  "categori": "finance", "icons": "/html/static/img/icons/logo.png", "routeName": "faturapages", "signal": true, "show":true}
+  ],
+
+  "AppStore": [
+    {
+      "name": "Squawk",
+      "icons": "/html/static/img/icons/Squawk.png",
+      "categori": "social",
+      "routeName": "tweeth",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Dark Chat",
+      "icons": "/html/static/img/icons/tchat.png",
+      "categori": "social",
+      "routeName": "tchat.channel",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Advertising",
+      "icons": "/html/static/img/icons/yellow.png",
+      "categori": "social",
+      "routeName": "yellowpages.show",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "News",
+      "icons": "/html/static/img/icons/haber.png",
+      "categori": "jobs",
+      "routeName": "haberler.show",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "PlayTube",
+      "icons": "/html/static/img/icons/PlayTube.png",
+      "categori": "social",
+      "routeName": "you",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "SnapGram",
+      "icons": "/html/static/img/icons/SnapGram.png",
+      "categori": "social",
+      "routeName": "instogramslash",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Vale",
+      "icons": "/html/static/img/icons/vale.png",
+      "categori": "jobs",
+      "routeName": "vale",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Games",
+      "icons": "/html/static/img/icons/games.png",
+      "categori": "mix",
+      "routeName": "tetris",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Gallery",
+      "icons": "/html/static/img/icons/photos.png",
+      "categori": "mix",
+      "routeName": "gallery",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "GPS",
+      "icons": "/html/static/img/icons/maps.png",
+      "categori": "mix",
+      "routeName": "gps",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Stock Market",
+      "icons": "/html/static/img/icons/stocks.png",
+      "categori": "finance",
+      "routeName": "borsaa",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Race",
+      "icons": "/html/static/img/icons/race.png",
+      "categori": "mix",
+      "routeName": "racea",
+      "blockedjobs": [{
+        "police": "police",
+        "ambulance": "ambulance"
+      }],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Note",
+      "icons": "/html/static/img/icons/notes.png",
+      "categori": "mix",
+      "routeName": "note",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Music",
+      "icons": "/html/static/img/icons/music2.png",
+      "categori": "mix",
+      "routeName": "musicc",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Götür",
+      "icons": "/html/static/img/icons/gotur.png",
+      "categori": "jobs",
+      "routeName": "getir",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "MarketPlace",
+      "icons": "/html/static/img/icons/MarketPlace.png",
+      "categori": "jobs",
+      "routeName": "ebay",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Rent A Car",
+      "icons": "/html/static/img/icons/rentacar.png",
+      "categori": "jobs",
+      "routeName": "rentcar",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Car Seller",
+      "icons": "/html/static/img/icons/carsales.png",
+      "routeName": "ikinciel",
+      "categori": "jobs",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Calculator",
+      "icons": "/html/static/img/icons/calculator.png",
+      "categori": "mix",
+      "routeName": "calcu",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Taxi",
+      "icons": "/html/static/img/icons/taxijob.png",
+      "categori": "jobs",
+      "routeName": "taxi",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Matchme",
+      "icons": "/html/static/img/icons/Matchme.png",
+      "categori": "social",
+      "routeName": "tindersc",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "LiveStream",
+      "icons": "/html/static/img/icons/liveapp.png",
+      "categori": "social",
+      "routeName": "livehome",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Giggles",
+      "icons": "/html/static/img/icons/Giggles.png",
+      "categori": "social",
+      "routeName": "9gag",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Tuneify",
+      "icons": "/html/static/img/icons/tuneify.png",
+      "categori": "mix",
+      "routeName": "zedge",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "MDT",
+      "icons": "/html/static/img/icons/mdt.png",
+      "categori": "jobs",
+      "routeName": "pmdt",
+      "blockedjobs": [],
+      "allowjob": [{
+        "police": "police"
+      }],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "House",
+      "icons": "/html/static/img/icons/home.png",
+      "categori": "mix",
+      "routeName": "qbhouse",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Qbit",
+      "icons": "/html/static/img/icons/qbit.png",
+      "categori": "finance",
+      "routeName": "qbcrypto",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Business",
+      "icons": "/html/static/img/icons/business.png",
+      "categori": "jobs",
+      "routeName": "bhome",
+      "blockedjobs": [{
+        "bus": "bus",
+        "judge": "judge",
+        "lawyer": "lawyer",
+        "reporter": "reporter",
+        "trucker": "trucker",
+        "tow": "tow",
+        "garbage": "garbage",
+        "vineyard": "vineyard",
+        "hotdog": "hotdog"
+      }],
+      "allowjob": [],
+      "signal": true,
+      "show": true
+    },
+    {
+      "name": "Special Application 1",
+      "icons": "/html/static/img/icons/qbit.png",
+      "categori": "finance",
+      "appurl": "gksphone-app/ui/index.html",
+      "routeName": "special1",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": false
+    },
+    {
+      "name": "Special Application 2",
+      "icons": "/html/static/img/icons/qbit.png",
+      "categori": "finance",
+      "appurl": "gksphone-app/ui/index.html",
+      "routeName": "special2",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": false
+    },
+    {
+      "name": "Special Application 3",
+      "icons": "/html/static/img/icons/qbit.png",
+      "categori": "finance",
+      "appurl": "gksphone-app/ui/index.html",
+      "routeName": "special3",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": false
+    },
+    {
+      "name": "Special Application 4",
+      "icons": "/html/static/img/icons/qbit.png",
+      "categori": "finance",
+      "appurl": "gksphone-app/ui/index.html",
+      "routeName": "special4",
+      "blockedjobs": [],
+      "allowjob": [],
+      "signal": true,
+      "show": false
+    }
+  ]
+}
