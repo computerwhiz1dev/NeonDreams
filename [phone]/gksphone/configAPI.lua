@@ -1,7 +1,7 @@
 Cfg = {}
 
 --- ### TEBEX - MUSIC - PlayTube  ### ---
-Cfg.TebexTransactionID = "tbx-.." --- Required for PlayTube and Music app. (Example : tbx-....)
+Cfg.TebexTransactionID = "tbx-82410823a25519-3a55f1" --- Required for PlayTube and Music app. (Example : tbx-....)
 
 -- Discord Webhook - start --
 
