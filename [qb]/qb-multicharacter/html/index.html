@@ -73,51 +73,67 @@
                     </div>
 
                     <div class="character-info" :class="{'slide-top-right-fade-leave-active': show.characters == false, 'slide-top-right-fade-leave-to': show.characters == false}">
-                        <span class="char-info-header">{{translations['charinfo_header']}}</span>
-                        <span class="no-char" v-if="characters[selectedCharacter] == undefined">{{translations['charinfo_description']}}</span>
-                        <table v-if="characters[selectedCharacter] !== undefined">
-                            <tr>
-                                <td>{{translations['name']}}:</td>
-                                <td>{{characters[selectedCharacter].charinfo.firstname}} {{characters[selectedCharacter].charinfo.lastname}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['birthdate']}}:</td>
-                                <td>{{characters[selectedCharacter].charinfo.birthdate}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['gender']}}:</td>
-                                <td>{{characters[selectedCharacter].charinfo.gender == 0 ? translations['male'] : translations['female']}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['nationality']}}:</td>
-                                <td>{{characters[selectedCharacter].charinfo.nationality}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['job']}}:</td>
-                                <td>{{characters[selectedCharacter].job.label}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['jobgrade']}}:</td>
-                                <td>{{characters[selectedCharacter].job.grade.name}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['cash']}}:</td>
-                                <td>&#36; {{dollar.format(characters[selectedCharacter].money.cash)}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['bank']}}:</td>
-                                <td>&#36; {{dollar.format(characters[selectedCharacter].money.bank)}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['phonenumber']}}:</td>
-                                <td>{{characters[selectedCharacter].charinfo.phone}}</td>
-                            </tr>
-                            <tr>
-                                <td>{{translations['accountnumber']}}:</td>
-                                <td>{{characters[selectedCharacter].charinfo.account}}</td>
-                            </tr>
-                        </table>
+                        <div class="character-info-inner">
+                            <span class="char-info-header">{{translations['charinfo_header']}}</span>
+                            <span class="no-char" v-if="characters[selectedCharacter] == undefined">{{translations['charinfo_description']}}</span>
+                            <div v-if="characters[selectedCharacter] !== undefined">
+                                <!-- Name -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['name']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].charinfo.firstname}} {{characters[selectedCharacter].charinfo.lastname}}</div>
+                                </div>
+                                <!-- Birthdate -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['birthdate']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].charinfo.birthdate}}</div>
+                                </div>
+                                <!-- Gender -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['gender']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].charinfo.gender == 0 ? translations['male'] : translations['female']}}</div>
+                                </div>
+                                <!-- Nationality -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['nationality']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].charinfo.nationality}}</div>
+                                </div>
+                                <!-- Job -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['job']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].job.label}}</div>
+                                </div>
+                                <!-- Job Grade -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['jobgrade']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].job.grade.name}}</div>
+                                </div>
+                                <!-- Cash -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['cash']}}</div>
+                                    <div class="char-value">&#36; {{dollar.format(characters[selectedCharacter].money.cash)}}</div>
+                                </div>
+                                <!-- Bank -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['bank']}}</div>
+                                    <div class="char-value">&#36; {{dollar.format(characters[selectedCharacter].money.bank)}}</div>
+                                </div>
+                                <!-- Phone Number -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['phonenumber']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].charinfo.phone}}</div>
+                                </div>
+                                <!-- Account Number -->
+                                <div class="char-detail">
+                                    <div class="char-label">{{translations['accountnumber']}}</div>
+                                    <div class="char-value">{{characters[selectedCharacter].charinfo.account}}</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
+                    
+                    
+                    
 
                     <div class="character-register" :class="{'slide-top-fade-leave-active': show.register == false, 'slide-top-fade-leave-to': show.register == false}">
                         <div class="characters-register-block-header">
